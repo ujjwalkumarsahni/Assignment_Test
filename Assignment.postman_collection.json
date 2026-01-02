@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "ac9f1186-7ee7-4920-b619-944a936c9a6c",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40579424"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ujjwal Kumar\",\r\n    \"email\": \"ujjwalkumar0514@gmail.com\",\r\n    \"password\": \"Ujjwal@1234\",\r\n    \"phone\": \"9608483662\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8000/api/health"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ujjwalkumar0514@gmail.com\",\r\n    \"password\": \"Ujjwal@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "User Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8000/api/auth/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "court",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/courts?sport=badminton&date=2024-01-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courts"
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "badminton"
+						},
+						{
+							"key": "date",
+							"value": "2024-01-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE SAMPLE COURTS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/courts/seed"
+			},
+			"response": []
+		},
+		{
+			"name": "GET COURTS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8000/api/courts"
+			},
+			"response": []
+		},
+		{
+			"name": "GET SINGLE COURT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/courts/69581a24a7e4bd9b0bb6b459"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE BOOKING",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courtId\": \"69581a24a7e4bd9b0bb6b459\",\r\n    \"date\": \"2024-01-20\",\r\n    \"timeSlotId\": \"69581a24a7e4bd9b0bb6b45a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER BOOKINGS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTgxNTRlYjEzMDg5M2UwN2FhNzQzZCIsImlhdCI6MTc2NzM4MDgwMiwiZXhwIjoxNzY5OTcyODAyfQ.X-LFuesVlTpOqyuFTziKWXUm70u5kuVx8sqgYYImCHs"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/bookings/mybookings"
+			},
+			"response": []
+		}
+	]
+}
