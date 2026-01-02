@@ -2,7 +2,8 @@
 
 ## Project Overview
 A full-stack sports turf/court booking application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to view available time slots, book courts, and manage their bookings.
-
+Backend URL : https://assignment-test-xq41.onrender.com
+Frontend URL : https://assignmenttest-omega.vercel.app/
 ## Features Implemented
 
 ### Core Features 
